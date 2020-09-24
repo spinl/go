@@ -100,7 +100,7 @@ jobs:
           ( cd 2 && nohup ./2 -test 98714 -ocr 127.0.0.1:12345 >~/2.log 2>&1 & )
           # ( cd 3 && nohup ./3 >~/3.log 2>&1 & )
           # tail -f ~/1.log ~/2.log ~/3.log
-          ( timeout -s 2 240m ./3 ; exit 0 )
+          ( cd 3 && timeout -s 2 240m ./3 ; exit 0 )
 
 
 
