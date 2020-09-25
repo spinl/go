@@ -16,5 +16,6 @@ readiness_check:
   path: "/_ah/health"
   check_interval_sec: 10
 
+
 env_variables:
   MEMCACHED_ADDR: 'memcached-play-golang:11211'
